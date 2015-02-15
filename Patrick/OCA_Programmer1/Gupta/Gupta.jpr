@@ -72,6 +72,17 @@
       <value n="j2eeWebAppName" v="OCA_Programmer1-Gupta-webapp"/>
       <value n="j2eeWebContextRoot" v="OCA_Programmer1-Gupta-context-root"/>
    </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <list n="EnvironmentVariables"/>
+            <value n="name" v="Default"/>
+            <value n="programArguments" v="John Jane Mary"/>
+            <value n="targetURL"/>
+         </hash>
+      </hash>
+   </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
    </hash>

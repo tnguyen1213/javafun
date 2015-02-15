@@ -12,11 +12,22 @@ public class PatricksUniverse {
     public static void main(String[] args) {
         PatricksUniverse firstUniverse = new PatricksUniverse("First One");
         
-        firstUniverse.sayHello();
+        if ((args == null) || (args.length == 0)) {
+            firstUniverse.sayHello(null);
+        }
+        else {
+            firstUniverse.sayHello(args[0]);
+        }
+        
     }
     
-    public void sayHello() {
-        System.out.println("Hello from Patrick's Universe named " + universeName + "!");
+    public void sayHello(String nameArg) {
+        if (nameArg == null) {
+            System.out.println("Hello, from Patrick's Universe named " + universeName + "!");
+        }
+        else {
+            System.out.println("Hello " + nameArg + ", from Patrick's Universe named " + universeName + "!");
+        }
     }
     
     private void setUniverseName(String universeName) {
